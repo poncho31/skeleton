@@ -1,0 +1,136 @@
+/* line 4, ../scss/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 7, ../scss/style.scss */
+button:hover {
+  cursor: pointer;
+}
+
+/* line 10, ../scss/style.scss */
+ul, li, a, h1 {
+  margin: 0;
+}
+
+/* line 45, ../scss/style.scss */
+html body {
+  background: #FFC04C;
+  margin: 0 8%;
+}
+/* line 48, ../scss/style.scss */
+html body header {
+  background: #FFC04C;
+}
+/* line 12, ../scss/style.scss */
+html body header nav {
+  position: relative;
+  text-align: left;
+  float: none;
+}
+/* line 16, ../scss/style.scss */
+html body header nav ul {
+  height: 6vh;
+}
+/* line 18, ../scss/style.scss */
+html body header nav ul li {
+  display: inline-block;
+  padding: 20px;
+  transition: all 0.4s ease-in-out;
+}
+/* line 22, ../scss/style.scss */
+html body header nav ul li a {
+  padding: 20px;
+  font-weight: bolder;
+  color: black;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px orange;
+  cursor: pointer;
+}
+/* line 30, ../scss/style.scss */
+html body header nav ul li:hover {
+  background: orange;
+  box-shadow: 2px 0 2px -2px #444, -2px 0 2px -2px #444;
+}
+/* line 33, ../scss/style.scss */
+html body header nav ul li:hover a {
+  color: white;
+  text-shadow: 2px 2px 2px #444;
+  text-decoration: none;
+}
+/* line 52, ../scss/style.scss */
+html body .clear {
+  clear: both;
+}
+/* line 62, ../scss/style.scss */
+html body section {
+  position: relative;
+  z-index: 10;
+  background: orange;
+  width: 100%;
+  height: 80vh;
+  padding: 5%;
+  box-shadow: -2px 2px 10px;
+}
+/* line 70, ../scss/style.scss */
+html body section h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px #444;
+  font-variant: small-caps;
+}
+/* line 77, ../scss/style.scss */
+html body footer {
+  background: #FFC04C;
+  width: 100%;
+  height: 14vh;
+}
+/* line 12, ../scss/style.scss */
+html body footer nav {
+  position: relative;
+  text-align: left;
+  float: right;
+}
+/* line 16, ../scss/style.scss */
+html body footer nav ul {
+  height: 6vh;
+}
+/* line 18, ../scss/style.scss */
+html body footer nav ul li {
+  display: inline-block;
+  padding: 20px;
+  transition: all 0.4s ease-in-out;
+}
+/* line 22, ../scss/style.scss */
+html body footer nav ul li a {
+  padding: 20px;
+  font-weight: bolder;
+  color: black;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px orange;
+  cursor: pointer;
+}
+/* line 30, ../scss/style.scss */
+html body footer nav ul li:hover {
+  background: orange;
+  box-shadow: 2px 0 2px -2px #444, -2px 0 2px -2px #444;
+}
+/* line 33, ../scss/style.scss */
+html body footer nav ul li:hover a {
+  color: white;
+  text-shadow: 2px 2px 2px #444;
+  text-decoration: none;
+}
+
+/* line 86, ../scss/style.scss */
+.active {
+  position: relative;
+  z-index: 11;
+  background: orange;
+  box-shadow: 2px 0 2px -2px #444, -2px 0 2px -2px #444;
+}
+/* line 91, ../scss/style.scss */
+.active a {
+  color: white;
+  text-shadow: 2px 2px 2px #444;
+}

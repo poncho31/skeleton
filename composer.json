@@ -1,0 +1,11 @@
+{
+    "autoload": {
+        "classmap": [
+            "class/Database/Database.php",
+            "class/Html/Menu.php",
+            "class/Config/Config.php"
+        ]
+    },
+    "require": {
+    }
+}
