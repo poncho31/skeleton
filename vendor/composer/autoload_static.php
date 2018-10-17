@@ -8,8 +8,12 @@ class ComposerStaticInitc8573eddcdd4b927e14a6b018d1a0518
 {
     public static $classMap = array (
         'appName\\Config\\Config' => __DIR__ . '/../..' . '/class/Config/Config.php',
+        'appName\\Controller\\PostsController' => __DIR__ . '/../..' . '/class/Controller/PostsController.php',
         'appName\\Database\\Database' => __DIR__ . '/../..' . '/class/Database/Database.php',
         'appName\\Html\\Menu' => __DIR__ . '/../..' . '/class/Html/Menu.php',
+        'appName\\Routing\\Route' => __DIR__ . '/../..' . '/class/Routing/Route.php',
+        'appName\\Routing\\Router' => __DIR__ . '/../..' . '/class/Routing/Router.php',
+        'appName\\Routing\\RouterException' => __DIR__ . '/../..' . '/class/Routing/RouterException.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
