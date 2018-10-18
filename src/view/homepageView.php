@@ -1,3 +1,5 @@
 <section class="homepage">
-    <h1>Nom de l'appli : "<?= $config['appName']?>"</h1>
+    <div class="textLoaded">
+        <h1>Nom de l'appli : "<?= $config['appName']?>"</h1>
+    </div>
 </section>

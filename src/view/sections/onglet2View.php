@@ -1,7 +1,10 @@
 <section class="onglet2">
-    <h1>ONGLET2</h1>
-<?php 
-include 'src/model/onglet2Model.php';
-echo $echo;
-?>
+    <div class="textLoaded">
+            <h1>Call Database</h1>
+            <hr>
+        <?php 
+        // include 'src/model/onglet2Model.php';
+        echo $customerTable;
+        ?>
+    </div>
 </section>

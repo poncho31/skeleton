@@ -10,3 +10,11 @@
 //     console.log(url);
 
 // })
+
+$(document).ready(function () {
+    $(".textLoaded").addClass('loaded');
+
+    $(window).on('beforeunload', function () {
+        $('.textLoaded').removeClass('loaded');
+    });
+});

@@ -3,24 +3,34 @@
 use appName\Database\Database;
 
 $db = new Database();
-if (!isset($echo)){
-    $stmt = $db->getQuery("SELECT nom, date, realisateur FROM film GROUP BY nom");
-    $echo = '<table class="table">
-            <thead>
-                <tr>
-                    <td>Date</td>
-                    <td>Film</td>
-                    <td>Réalisateur</td>
+$customerTable;
+if (!isset($customerTable)){
+    $stmt = $db->getQuery("SELECT 
+                                CUST_NAME as nameCustomer,
+                                CUST_CITY as city,
+                                CUST_COUNTRY as country,
+                                OUTSTANDING_AMT as countAMT
+                           FROM customer");
+    $customerTable = '
+    <table class="">
+            <thead >
+                <tr >
+                    <td>Nom</td>
+                    <td>Ville</td>
+                    <td>Pays</td>
+                    <td>Montant restant</td>
                 </tr>
             </thead>';
     foreach ($stmt as $value) {
-        $echo .= '<tbody>
+        $customerTable .= '<tbody>
                     <tr>
-                        <td>'.date('Y',strtotime($value->date)).'</td>
-                        <td>'.$value->nom.'</td>
-                        <td>'.$value->realisateur.'</td>
+                        <td>'.$value->nameCustomer.'</td>
+                        <td>'.$value->city.'</td>
+                        <td>'.$value->country.'</td>
+                        <td>'.$value->countAMT.'</td>
                     </tr>
                  </tbody>';
     }
-    $echo .= '</table>';
+    $customerTable .= '</table>';
 }
+// date('Y',strtotime($value->date))
